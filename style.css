@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #1a1f36;
+    color: #fff;
+}
+.cointainer {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+.cointainer h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+.cointainer h1 span {
+    color: #00c896;
+    border-bottom: 4px solid #00c896;
+    padding-bottom: 7px;
+}
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 100%;
+    margin-right: 10px;
+}
+.cointainer button img {
+    width: 28px;
+    margin-right: 10px;
+}
+.cointainer button {
+    border: 0;
+    outline: 0;
+    background: #00c896;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copy-message {
+    color: #00c896;
+    font-size: 16px;
+    margin-top: -20px;
+    margin-left: 10px;
+    display: none;
+    animation: fadeOut 2s forwards;
+}
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+
+/* ---------------- Responsive Enhancements ---------------- */
+@media (max-width: 768px) {
+    .cointainer {
+        margin: 8%;
+    }
+
+    .cointainer h1 {
+        font-size: 36px;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .display input {
+        font-size: 20px;
+    }
+
+    .display img {
+        align-self: flex-end;
+    }
+
+    .cointainer button {
+        font-size: 20px;
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cointainer {
+        margin: 6%;
+    }
+
+    .cointainer h1 {
+        font-size: 28px;
+    }
+
+    .display input {
+        font-size: 18px;
+    }
+
+    .cointainer button {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .display img {
+        width: 24px;
+    }
+
+    .cointainer button img {
+        width: 22px;
+    }
+}
